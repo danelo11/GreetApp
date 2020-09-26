@@ -1,0 +1,31 @@
+body{
+    border-style: none;
+    margin: 0;
+    padding: 0;
+    background: url("../images/portada.jpg");
+    background-size: cover;
+}
+
+.btn-success{
+    left: 10px;
+    border-style: none;
+}
+
+#chicha{
+    display: none;
+}
+
+#cabecusers{
+    display: block;
+    text-align: center;
+}
+
+.fallo{
+    color: red;
+}
+
+.privado{
+    font-style: italic;
+    color: grey;
+}
+
