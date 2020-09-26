@@ -5,11 +5,9 @@ module.exports = function(io){
     var usuarios = {};
 
     io.on('connection', async function(socket){
-        console.log("New user joined");
         var hiddenmsg = await MensajesSchema.find({}); 
         socket.emit('cargar antiguos', hiddenmsg);
         socket.on('nuevo usuario', function(user, callback){
-            console.log(user)
             if(user in usuarios){
                 callback(false);
             }else{

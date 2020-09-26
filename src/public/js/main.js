@@ -45,7 +45,6 @@ $(function(){
         let interfaz = '';
         for(var i=0;i<datos.length;i++){
             interfaz += `<p><i class="far fa-user"></i> ${datos[i]}</p>`
-            console.log(interfaz);
         }
         usuarios.html(interfaz);
     })
